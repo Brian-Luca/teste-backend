@@ -47,7 +47,7 @@ if(isset($_GET['id'])){
 
     if (isset($uuid) && isset($nome) && isset($cpf) && isset($email) && isset($hash) && isset($permissao) && isset($status))
     {
-        $stmt = $conexao->prepare('UPDATE IGNORE `usuario` SET `uuid` = ?, `nome` = ?, `cpf` = ?, `email` = ?, `senha` = ?, `permissao` = ?, `data_atualizacao` = ?, `status` = ?');
+        $stmt = $conexao->prepare('UPDATE IGNORE `usuario` SET `uuid` = ?, `nome` = ?, `cpf` = ?, `email` = ?, `senha` = ?, `permissao` = ?, `data_atualizacao` = ?, `status` = ? WHERE id = ? LIMIT 1');
         $stmt->bindValue(1, $uuid);
         $stmt->bindValue(2, $nome);
         $stmt->bindValue(3, $cpf);
@@ -56,8 +56,9 @@ if(isset($_GET['id'])){
         $stmt->bindValue(6, $permissao);
         $stmt->bindValue(7, date("Y-m-d H:i:s"));
         $stmt->bindValue(8, $status);
+        $stmt->bindValue(9, $id);
         $stmt->execute();
-        header('Location: ../index.php');
+        //header('Location: ../index.php');
     }
 }
 ?>
