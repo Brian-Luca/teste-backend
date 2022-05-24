@@ -58,7 +58,7 @@ if(isset($_GET['id'])){
         $stmt->bindValue(8, $status);
         $stmt->bindValue(9, $id);
         $stmt->execute();
-        //header('Location: ../index.php');
+        header('Location: ../index.php');
     }
 }
 ?>
