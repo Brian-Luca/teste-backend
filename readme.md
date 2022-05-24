@@ -2,42 +2,14 @@
   <img src="https://www.marktclub.com.br/images/logo_marktclub.png" width="200" alt="Logo Markt Club">
 </p>
 
-## Desafio Back-End
+## Login - Admin (Todas as permissões)
 
-**Proposta:** O principal objetivo deste desafio é testar o seu conhecimento em Desenvolvimento Back-end seguindo as boas práticas do desenvolvimento moderno.
+**CPF:** 725.813.224-46
+**Senha:** admin123
 
-Você está livre para fazer qualquer alteração no projeto inicial.
+## Login - Usuario (Apenas login)
 
-## Requisitos - o que será avaliado?
+**CPF:** 067.520.142-05
+**Senha:** user123
 
-- Escrita (PHP, MySql);
-- Padronização do código;
-- Organização e qualidade do código;
-- Estrutura, semântica e escalabilidade do projeto;
-- Segurança das informações;
-- Boas práticas;
-
-Tente usar o mínimo possível de coisas prontas como bibliotecas, frameworks e etc, o teste já é para ver seu conhecimento nas linguagens, quanto mais código, mais podemos analisar.
-
-## Qual a nossa stack?
-
-Caso você tenha interesse em se aproximar da nossa Stack, usamos:
-
-- JavaScript ES6
-- Stylus;
-- Gulp para automatização de tarefas;
-- PHP 8.1
-- Vendor
-- GIT
-- Docker
-
-**Ps.:** Caso queira usar nosso ambiente docker, basta configurar as portas no docker-compose.yml e executar docker-compose up -d para subir a rede e os containers
-
-## Como entregar o desafio?
-
-1. Faça um clone do repositório
-2. Faça as devidas alterações
-3. Suba as alterações para o GitHub em um repositório público
-4. Nos mande por e-mail o link do repositório
-
-**Ps.:** Caso precise de configuração para rodar o projeto após entregue, você precisa deixar claro todos os passos.
+**Ps.:** Importar base de dados marktclub para obter as contas.
